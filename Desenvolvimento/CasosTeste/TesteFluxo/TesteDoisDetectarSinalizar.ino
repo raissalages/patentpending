@@ -36,7 +36,7 @@ void loop()
   duracao = pulseIn(pingPin, HIGH);
 
   // convert the time into a distance
-  distanciaEmCm = microsegundosParaCentimetros(duracao);
+  distanciaEmCm = microssegundosParaCentimetros(duracao);
 
   // if the distance is different from the previous distance, calculate the proportion of the distance and turn on the vibration motor
   if (flag != distanciaEmCm)
@@ -77,7 +77,7 @@ void loop()
   delay(100);
 }
 
-long microsegundosParaCentimetros(long microsegundos)
+long microssegundosParaCentimetros(long microssegundos)
 {
-  return microsegundos / 29 / 2;
+  return microssegundos / 29 / 2;
 }
