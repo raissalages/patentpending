@@ -38,16 +38,6 @@ void loop()
   Serial.print(distancia2);
   Serial.println(" cm");
   
-  if(distancia1 < 30 || distancia2 < 30){
-    vibracao(100);
-  }else if (distancia1 < 100 || distancia2 < 100){
-    vibracao(300);
-
-  }else{
-    vibracao(400);
-
-  }
-  
   delay(100);
 }
 
