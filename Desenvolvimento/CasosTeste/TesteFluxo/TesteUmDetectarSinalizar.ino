@@ -11,11 +11,11 @@ double porcentagemDaDistancia;
 void setup()
 {
   Serial.begin(9600);
+  pinMode(motorDeVibracaoPino, OUTPUT);
 }
 
 void loop()
 {
-  pinMode(motorDeVibracaoPino, OUTPUT);
   pinMode(pingPin, OUTPUT);
   digitalWrite(pingPin, LOW);
   delayMicroseconds(2);
@@ -39,7 +39,7 @@ void loop()
     Serial.print(proporcaoDaDistancia);
     Serial.println();
 
-    // if the distance is less than 5 distanciaEmCm or more than 330 distanciaEmCm, turn off the vibration motor
+    // if the distance is less than 5 cm or more than 330 cm, turn off the vibration motor
     if (distanciaEmCm <= sensorMaxDistance && distanciaEmCm >= sensorMinDistance)
     {
       for (int i = 0; i <= proporcaoDaDistancia; i++)
