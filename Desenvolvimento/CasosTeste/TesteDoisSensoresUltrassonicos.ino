@@ -1,3 +1,4 @@
+// Link https://www.tinkercad.com/things/6i8jJUGNK9Q-testedoissensoresultrassonicos
 const int trigPin1 = 8;
 const int echoPin1 = 7;
 const int trigPin2 = 13;
