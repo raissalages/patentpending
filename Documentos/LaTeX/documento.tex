@@ -164,22 +164,7 @@
 \mestreem{Engenharia Xxxxxx}
 \areadeconcentracaomestrado{Engenharia Xxxxxx}
 
-% AVISO: Caso necessario alterar o texto de apresenta-
-% cao da dissertacao, ir a pasta "lib", arquivo 
-% "ufctex.sty" na linha 511.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%               Informação para Tese              %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\programadoutorado{Programa de Pós-Graduação em Xxxxxx}
-\nomedodoutorado{Doutorado em Xxxxxxx}
-\doutorem{Engenharia Xxxxxx}
-\areadeconcentracaodoutorado{Engenharia Xxxxxxx}
-
-% AVISO: Caso necessario alterar o texto de apresenta-
-% cao da tese, ir a pasta "lib", arquivo "ufctex.sty" 
-% na linha 515.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%      Informacoes relacionadas ao trabalho       %%
@@ -262,9 +247,10 @@
 	\imprimirresumo{1-pre-textuais/resumo}
 	\imprimirabstract{1-pre-textuais/abstract}
 	\renewcommand*\listfigurename{Lista de Figuras} %Se você comentar esta linha o título da lista fica: LISTA DE ILUSTRAÇÕES
+
 	\imprimirlistadeilustracoes
-	\imprimirlistadetabelas
-	%\imprimirlistadequadros
+%	\imprimirlistadetabelas
+	\imprimirlistadequadros
 	%\imprimirlistadealgoritmos
 	%\imprimirlistadecodigosfonte
 	%\imprimirlistadeabreviaturasesiglas
@@ -279,17 +265,17 @@
 	\input{2-textuais/2-fundamentacao-teorica}
 	\input{2-textuais/3-metodologia}
 	\input{2-textuais/4-resultados}
-	\input{2-textuais/5-poc}
+ 	\input{2-textuais/5-poc}
 	%\input{2-textuais/6-conclusao}
 	
 	%Elementos pós-textuais	
 	\bibliography{3-pos-textuais/referencias}
 %	\imprimirglossario %	
-	%\imprimirapendices
+	\imprimirapendices
 		% Adicione aqui os apendices do seu trabalho
-	%	\input{3-pos-textuais/apendices/apendice-a}
-	%	\input{3-pos-textuais/apendices/apendice-b}
-	%	\input{3-pos-textuais/apendices/apendice-c}
+		\input{3-pos-textuais/apendices/apendice-a}
+		%\input{3-pos-textuais/apendices/apendice-b}
+		\input{3-pos-textuais/apendices/apendice-c}
 		
 	%	\imprimiranexos
 		% Adicione aqui os anexos do seu trabalho
