@@ -1,0 +1,109 @@
+\chapter{Introdução}
+\label{cap:introducao}
+
+%Para começar a usar este \textit{template}, na plataforma \textit{ShareLatex}, vá nas opções (três barras vermelhas horizontais) no canto esquerdo superior da tela e clique em "Copiar Projeto" e dê um novo nome para o projeto. 
+
+A Constituição Federal de 1988, documento produzido com grande enfoque na instituição dos direitos humanos após o processo de redemocratização no Brasil, reforça a ampliação do acesso a serviços e informações para pessoas com deficiência através do Artigo 24. A Constituição Brasileira define a deficiência visual como um impedimento de longo prazo em aspectos físicos, mentais, intelectuais e/ou sensoriais, podendo afetar a participação plena de um indivíduo na sociedade. Apesar dos avanços legislativos e do reconhecimento dos direitos das pessoas com deficiência, ainda existem desafios significativos a respeito da efetiva implementação dessas medidas e da garantia de igualdade de oportunidades para todos os cidadãos.
+
+Segundo o censo levantado pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em 2022, a dificuldade para enxergar foi a segunda imparidade mais observada na população, atingindo mais de 6 milhões de pessoas. O IBGE considera uma pessoa com deficiência aquela que apresenta muita dificuldade ou total incapacidade de realizar atividades voltadas a certos domínios funcionais, como visão, locomoção, audição, cognição, comunicação e autocuidado   \cite{ibge}. Sob esse critério, uma deficiência visual é uma condição que afeta a visão de uma pessoa, total ou parcialmente, e que pode ter origem congênita ou ser adquirida ao longo da vida por meio de uma doença, lesão ou envelhecimento.
+
+Mais de 31 milhões de pessoas em todo o mundo foram diagnosticadas com perda total de visão, e os casos de perda parcial foram estimados em 160 milhões \cite{the-lancet-global-health}. Embora esses números tenham diminuído em termos proporcionais devido ao desenvolvimento socioeconômico, a programas de saúde pública direcionados e ao melhor acesso a serviços de saúde ocular, o crescimento populacional e o envelhecimento têm superado essas reduções na prevalência. Como resultado, o número total de pessoas afetadas aumentou, com estimativas atuais indicando 36 milhões de casos de cegueira total e 217 milhões de casos de deficiência visual moderada a severa.
+
+A extensão da desigualdade transcende as barreiras físicas e sensoriais, estendendo-se de maneira preocupante para o âmbito econômico. Os dados sobre a população brasileira em 2022 revelam que o rendimento médio habitual de pessoas com deficiência é, em média, 31\% menor do que aquele apresentado por pessoas sem qualquer tipo de dificuldade mencionada \cite{ibge}. Esse contraste entre a presença de deficiências e o impacto econômico sublinha uma disparidade significativa que impõe barreiras substanciais às oportunidades de vida, educação, emprego e participação plena na sociedade. Não obstante, os dados auferidos pelo IBGE e a previsão de aumento dos casos levantada por Gilbert e Ramke (2017) destacam tanto a presença significativa dessas pessoas na população total, quanto a urgência de um olhar mais específico e direcionado para a implementação de medidas que possam abordar as dificuldades únicas enfrentadas pelas pessoas com deficiência visual.
+
+
+Como uma forma de abranger as necessidades particulares de pessoas com deficiência, a Tecnologia Assistiva (TA) se apresenta como um conjunto de arsenal de recursos e serviços para proporcionar e ampliar as habilidades funcionais de pessoas com deficiência \cite{introducao-ta}. Os recursos de TA incluem ferramentas que aumentam a acessibilidade, como bengalas, próteses, roupas adaptadas, softwares, e hardwares especiais. Já os serviços referem-se ao suporte profissional oferecido para auxiliar na obtenção ou utilização da TA, incluindo experimentação e avaliações \cite{bersche-tonolli-2006}.
+
+Dessa forma, este trabalho tem como objetivo desenvolver uma bengala inteligente como um recurso de Tecnologia Assistiva, visando ampliar a mobilidade e facilitar a interação do usuário com o ambiente ao seu redor. O projeto consiste em uma bengala capaz de identificar obstáculos em diferentes alturas, transmitindo a distância ao usuário por meio de vibrações de intensidade variável. Com isso, a bengala busca melhorar a qualidade de vida de pessoas com deficiência visual que necessitam de maior assistência, tornando-as mais independentes e capazes de se locomover sem a necessidade de ajuda de terceiros, promovendo, assim, sua autonomia e inclusão social.
+
+Na busca para alcançar esses objetivos, a metodologia utilizada para o estudo e desenvolvimento da bengala consistiu em uma revisão bibliográfica de projetos semelhantes que apresentaram pesquisa de campo, com o propósito de compreender melhor as necessidades identificadas por pessoas com deficiência visual. Essa revisão permitiu explorar as abordagens utilizadas nesses estudos, identificar possíveis lacunas em bengalas inteligentes desenvolvidas no passado, e, assim, orientar o aprimoramento da proposta para ampliar a eficácia e a aplicabilidade da bengala inteligente para o usuário final.
+
+\section{Contextualização do problema}
+A dificuldade ou impossibilidade de visualizar obstáculos no ambiente podem apresentar desafios àqueles que se deslocam no espaço, seja por batidas ou tropeços. Assim, as bengalas tradicionais tornaram-se um instrumento de Tecnologia Assistiva essencial de locomoção que assegura à pessoa com deficiência visual o direito de se deslocar com segurança sem a necessidade de um acompanhante \cite{bengala-branca}. Elas permitem que o usuário consiga sentir elementos à altura do solo ao ser movimentada em frente ao corpo, realizando uma espécie de mapeamento tátil do espaço. Porém, esses objetos não são capazes de fornecer quaisquer informações sobre elementos acima do solo, como placas, galhos, móveis suspensos, prateleiras e orelhões. Assim, a falta de informação em tempo real sobre a presença desses obstáculos representa o perigo de possíveis acidentes.
+
+Um outro recurso de Tecnologia Assistiva comum consiste nos cães-guia, que são treinados para prestar assistência a pessoas portadoras de deficiência visual durante o seu deslocamento. Contudo, nem todos os cães conseguem ser treinados ou são acessíveis a todos. Como exemplo disso, Silva e Duarte (2018) exploram a relação entre cães-guia e a parcela da população que precisa desse auxílio, expondo que há mais de 10 mil pessoas com grandes dificuldades visuais na cidade de Caruaru - Pernambuco, entretanto, não existe um cachorro treinado para prestar esse tipo de serviço no local \cite{cao-guia-ta}. Dessa forma, evidencia-se uma alta demanda que não pode ser suprida pelos motivos supracitados.
+
+A acessibilidade inadequada em espaços públicos e edificações representa outro problema enfrentado por pessoas com deficiência visual. Esses ambientes precisam de diversas adaptações para receber esses indivíduos, como rampas, sinalização tátil, leitores sonoros e outros, que tornam mais fácil circular com segurança e independentemente em locais como ruas, praças, escolas etc. Apesar disso, ainda existem barreiras arquitetônicas e espaciais que prejudicam a livre movimentação de pessoas que têm limitações físicas, cognitivas, sensoriais e/ou funcionais, temporárias ou permanentes \cite{BarreirasArquitetonicas}.
+
+
+\section{Justificativa}
+A solução proposta para as limitações de detecção de obstáculos mais elevados, inerente à bengala tradicional, consiste no desenvolvimento de uma bengala inteligente. Este dispositivo inclui sensores e transdutores para detecção de obstáculos acima da linha da cintura, de forma que possa alertar o usuário sobre a aproximação através de vibrações que variam de intensidade. Assim, além de manter o propósito
+
+A bengala inteligente utiliza tecnologias como sensores e outros dispositivos para coletar dados sobre seu ambiente e transmitir essas informações ao usuário por meio de feedback, de áudio ou tátil. Por exemplo, ao se aproximar de um obstáculo, o usuário percebe uma vibração que varia de intensidade, indicando a presença e localização relativa do obstáculo. Isto fornece informações contextuais aos utilizadores, essenciais para a segurança e autonomia, mesmo em ambientes desconhecidos ou dinâmicos. Além disso, também reconhece o toque da mão do usuário e dispara um alarme sonoro em caso de perdas ou distanciamento da bengala.
+
+As soluções também abordam questões de usabilidade, com autonomia de bateria, carregamento do dispositivo, fácil portabilidade e design confortável, facilitando o manuseio sem interferir na experiência existente com bengalas tradicionais. Combinando tecnologia inovadora e design centrado no usuário, este dispositivo tem o potencial de transformar a experiência de navegação e interação em ambientes urbanos, promovendo uma sociedade mais inclusiva e acessível.
+
+
+A justificativa para o desenvolvimento da bengala inteligente surge da necessidade de superar as limitações das bengalas tradicionais, que, embora eficazes na detecção de obstáculos ao nível do solo, não oferecem proteção contra obstáculos elevados, como placas, galhos e outros objetos suspensos. Essa deficiência pode resultar em acidentes e comprometer a segurança de pessoas com deficiência visual. Além disso, o acesso limitado a cães-guia e as barreiras arquitetônicas persistentes em espaços públicos reforçam a demanda por soluções mais acessíveis e abrangentes. A bengala inteligente, ao incorporar sensores e transdutores que detectam obstáculos acima da linha da cintura e alertam o usuário por meio de vibrações, oferece uma resposta eficaz a esses desafios. Ao mesmo tempo, o dispositivo mantém a funcionalidade básica das bengalas tradicionais, enquanto aprimora a experiência de navegação e interação em ambientes urbanos, contribuindo para a promoção de uma sociedade mais inclusiva e segura.
+
+\section{Objetivos}
+
+
+A seguir, são apresentados os objetivos gerais e específicos do projeto, que guiaram o desenvolvimento da bengala inteligente e a definição de suas funcionalidades.
+
+\subsection{Objetivo geral}
+Desenvolver uma bengala inteligente que ofereça detecção eficaz de obstáculos, tanto ao nível do solo quanto em alturas superiores, permitindo sua integração ao cotidiano do usuário de maneira simples e intuitiva. Dessa forma, o projeto visa fornecer uma alternativa mais completa em relação às bengalas tradicionais, atendendo às necessidades do usuário sem comprometer a usabilidade e, assim, aprimorar a autonomia e a segurança durante a locomoção.
+
+\subsection{Objetivos específicos}
+ A seguir, são apresentados os objetivos específicos que guiaram o projeto e a pesquisa para o desenvolvimento da bengala inteligente.
+
+\subsubsection{Objetivos de pesquisa}
+
+Para nortear a pesquisa, foram estabelecidos os seguintes objetivos específicos:
+
+\begin{enumerate}
+    \item Identificar as necessidades de pessoas com deficiência visual a partir da revisão da literatura de projetos similares.
+    \item Compreender os aspectos da relação entre as bengalas tradicionais e pessoas que realizam o seu uso.
+    \item Analisar outras bengalas automatizadas que foram  desenvolvidas anteriormente, com o propósito de explorar pontos de melhorias.
+    \item Destacar as dificuldades encontradas por pessoas com deficiência visual durante a locomoção.
+    
+\end{enumerate}
+
+Esses objetivos servem como base para o desenvolvimento e aprimoramento da bengala inteligente, garantindo que ela atenda de forma eficaz às necessidades dos usuários.
+
+\subsubsection{Objetivos de projeto}
+
+Com o propósito de direcionar o desenvolvimento da bengala, foram levantados os seguintes objetivos de projeto:
+\begin{enumerate}
+    \item Oferecer maior autonomia e independência aos usuários, assegurando uma locomoção mais segura através de uma ferramenta de Tecnologia Assistiva.
+    \item Propor um projeto que satisfaça as necessidades do público-alvo, criando um produto completamente adaptado para pessoas com deficiência visual.
+    \item Desenvolver uma bengala que seja acessível economicamente e que preserve a experiência de uso de bengalas tradicionais.
+\end{enumerate}
+
+Os objetivos de projeto buscam abordar as necessidades específicas de pessoas com deficiência visual, de acordo com os resultados obtidos na pesquisa.
+
+
+
+\section{Público-alvo}
+
+A Organização Mundial da Saúde propõe uma classificação da acuidade visual em várias categorias. A acuidade visual é calculada como a razão entre a distância da qual uma pessoa específica vê um objeto e a distância na qual a mesma imagem é vista por uma pessoa sem deficiência visual. Por exemplo, uma acuidade de 6/60 significa que um objeto percebido a 60 metros por uma pessoa com visão normal deve estar a 6 metros de uma pessoa com deficiência visual para ser percebido da mesma forma \cite{brock-2013}. 
+
+O quadro abaixo representa diferentes níveis de acuidade visual que são utilizados para definir essas categorias.
+
+\begin{quadro}[!ht]
+    \captionsetup{width=1.0\textwidth} % Definindo a largura da legenda
+    \caption{Categorias de Deficiência Visual}
+    \begin{tabular}{p{0.3\textwidth}p{0.3\textwidth}p{0.3\textwidth}} % Definindo larguras para as colunas
+        \toprule
+         \textbf{Título da Categoria} & \textbf{Acuidades visuais piores que} & \textbf{Acuidades visuais iguais ou melhores que} \\
+        \midrule
+         Nenhuma ou leve deficiência visual &  & 6/18, 3/10, 20/70 \\
+         Deficiência visual moderada & 6/18, 3/10, 20/70 & 6/60, 1/10, 20/200 \\
+         Deficiência visual severa & 6/60, 1/10, 20/200 & 3/60, 1/20, 20/400 \\
+         Cegueira & 3/60, 1/20, 20/400 & 1/60, 1/50, 5/300 \\
+         Cegueira & 1/60, 1/50, 5/300 & Percepção de luz \\
+         Cegueira & Sem percepção de luz &  Sem percepção de luz \\
+         Cegueira & Indeterminado & Indeterminado \\
+        \bottomrule
+    \end{tabular}
+    \caption*{Fonte: \cite{brock-2013}.} % Legenda sem rótulo
+    \label{tab:categorias_deficiencia_visual}
+\end{quadro}
+
+A cada cinco segundos, uma pessoa em todo o mundo fica com deficiência visual. A pesquisa vem do projeto da Organização Mundial da Saúde (OMS), Relatório Mundial sobre Deficiência 2010 e Visão 2020 (um plano para acabar com a cegueira evitável até 2020). 90\% de todos os casos de cegueira ocorrem em países em desenvolvimento e subdesenvolvidos \cite{vision-2010}. 
+
+Segundo dados do IBGE de 2010, mais de 6,5 milhões de pessoas no Brasil sofrem com problemas de visão \cite{mec-direitos-pcd}. Destes, 528.624 pessoas são cegas. 6.056.654 pessoas têm um problema grave permanente de visão (baixa visão ou visão subnormal). Outros 29 milhões de pessoas relataram ter problemas de visão persistentes mesmo quando usavam óculos ou lentes de contato. Em geral, 23,9\% (45,6 milhões de pessoas) da população total do Brasil relatam ter algum tipo de deficiência, sendo a mais comum a visão, afetando 3,5\% da população. Em seguida estão os problemas motores (2,3\%), intelectuais (1,4\%) e auditivos (1,1\%).
+
+Dessa forma, baseando-se nas categorias estabelecidas pela OMS, fica estabelecido que a bengala inteligente foi projetado especificamente para pessoas com vários graus de deficiência visual, desde deficiência visual moderada até cegueira total.
+
+O público-alvo também são cuidadores, familiares e profissionais que prestam assistência a pessoas com deficiência visual. Esses indivíduos desempenham um papel fundamental no suporte e no uso correto da bengala inteligente, ajudando a integrar a tecnologia na vida diária dos usuários.
