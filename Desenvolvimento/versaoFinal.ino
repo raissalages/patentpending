@@ -9,6 +9,10 @@ const int trigPin2 = 13;      // Pin de envio (trigger) do sensor ultrassonico
 
 long distancia;
 long distancia2;
+unsigned long tempoAnterior = 0;  // Variável para armazenar o tempo do último toque
+const long intervalo = 60000;      // Intervalo de 1 minuto (60000 milissegundos)
+bool buzzerTocou = false;         // Flag para saber se o buzzer já tocou 3 vezes
+int contadorBuzzer = 0;           // Contador de toques do buzzer
 
 
 void setup()
@@ -28,17 +32,33 @@ void setup()
 void loop()
 {
 
- /*
-  if (digitalRead(pinSensorTouch) == HIGH) {
-    digitalWrite(pinLED, HIGH);
-    digitalWrite(buzzerSensor, LOW);
-  }
-  else{
-      digitalWrite(pinLED, LOW);
-    digitalWrite(buzzerSensor, HIGH);
 
+  if (digitalRead(pinSensorTouch) == HIGH) {
+    digitalWrite(buzzerSensor, LOW);  
+    
+    tempoAnterior = millis();
+    buzzerTocou = false;  
+    contadorBuzzer = 0;
   }
-  */
+  else {
+    digitalWrite(buzzerSensor, HIGH); 
+
+    unsigned long tempoAtual = millis();  
+
+    if (tempoAtual - tempoAnterior >= intervalo && !buzzerTocou) {
+      for (contadorBuzzer = 0; contadorBuzzer < 3; contadorBuzzer++) {
+        digitalWrite(buzzerSensor, LOW);  
+        delay(200);                   
+        digitalWrite(buzzerSensor, HIGH); 
+        delay(200);                    
+      }
+      
+      buzzerTocou = true; 
+      tempoAnterior = tempoAtual; 
+    }
+  }
+
+  
   
   distancia = atividadeSensor(trigPin, echoPin);
 
