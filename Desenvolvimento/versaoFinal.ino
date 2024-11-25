@@ -27,7 +27,6 @@ void loop()
 {
 
   if (digitalRead(pinSensorTouch) == HIGH) {
-    Serial.print("tocou ihu");
     tempoUltimoToque = millis();  
     alarmeDisparado = false;      
     digitalWrite(buzzerSensor, LOW);  
